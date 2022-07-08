@@ -26,7 +26,7 @@ jobs:
          export AWS_SESSION_TOKEN=$(echo $Cross_Acc_Role | jq -r .Credentials.SessionToken)
      
       - name: login connetion
-
+        run: ec2 connection
    
       - name: make build
         run:
